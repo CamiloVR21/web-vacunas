@@ -1,0 +1,131 @@
+.boton{
+    padding:  18px 30px;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #040122;
+    border-radius: 5px;
+    min-width: 200px;
+    text-transform:uppercase;
+    font-weight: 600;
+    z-index: 0;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+
+}
+
+.boton::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent,#ffffff71,transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+    skew(-20deg);
+
+}
+
+.boton:hover::before{
+    transform: translateX(300px)skew(-20deg);
+}
+
+.boton:hover{
+    background: #003cff;
+}
+/* boton 2*/
+
+.boton1{
+    padding:  15px 15px;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: rgb(105, 145, 255);
+    border-radius: 5px;
+    min-width: 200px;
+    text-transform:uppercase;
+    font-weight: 600;
+    z-index: 0;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+
+}
+
+.boton1::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent,#ffffff71,transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+    skew(-20deg);
+
+}
+
+.boton1:hover::before{
+    transform: translateX(300px)skew(-20deg);
+}
+
+.boton1:hover{
+    background: #0066ffd3;
+}
+
+/* boton 3*/
+
+.boton3{
+    padding:  15px 15px;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: rgb(105, 145, 255);
+    border-radius: 5px;
+    min-width: 200px;
+    text-transform:uppercase;
+    font-weight: 600;
+    z-index: 0;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+
+}
+
+.boton3::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent,#ffffff71,transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+    skew(-20deg);
+
+}
+
+.boton3:hover::before{
+    transform: translateX(300px)skew(-20deg);
+}
+
+.boton3:hover{
+    background: #0066ffd3;
+}

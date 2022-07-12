@@ -1,0 +1,57 @@
+{% load static %}
+
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css links-->
+    <link rel="stylesheet" href="{% static 'css/loginn.css' %}">
+    <title>Login vacunas</title>
+</head>
+<body>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="/registro/" method="post"> 
+			{% csrf_token %}
+			
+			<h1>Crear cuenta</h1>
+	<BR></BR>
+	{{form.nombre}}
+	{{form.Contraseña}}
+	{{form.Contraseña2}}
+			<button>Crear</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="/login/" method="post"> {% csrf_token %}
+			<h1>Iniciar Sesion</h1>
+			{{form.nombre}}
+			{{form.Contraseña}}
+			<a href="#">Olvidaste tu contraseña?</a>
+			<button>Iniciar</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Bienvenido!</h1>
+				<p>Crea tu cuenta en vacunas.cl.</p>
+				<button class="ghost" id="signIn">Iniciar sesion</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hola Amigo!</h1>
+				<p>Inicia sesion para entrar a tu perfil.</p>
+				<button class="ghost" id="signUp">Crear cuenta</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--js links-->
+<script src="{% static 'js/formulario.js' %}"></script>
+<script src="{% static 'js/login.js' %}"></script>
+</body>
+</html>
